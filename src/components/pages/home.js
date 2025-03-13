@@ -1,11 +1,37 @@
 import Header from "../layout/header";
-import Image from "next/image";
-import StatusCod from "../ui/status/StatusCod";
-import Bracket from "../ui/status/bracket";
 import CardHead from "../ui/cardHeader";
 import CardCategory from "../ui/cardCategory";
+import CardFlashSale from "../ui/cardFlashSale";
+import CardProduct from "../ui/cardProduct";
 
 function HomePage() {
+    const product = [
+        {
+            title: "name Product",
+            selling: "0",
+            price: "0",
+            status: {
+                bracket: "",
+                cod: true,
+            },
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-M_r7bEyuBQzUODeKwobumjZ2bnoB_uelw&s",
+            element: <div>halo</div>
+        },
+    ];
+
+    const productTerlaris = [
+        {
+            title: "name Product",
+            img: ""
+        }
+    ];
+
+    const flashSale = [
+        {
+            price: "0",
+            img:""
+        }
+    ]
     return (
         <>
             <div className="w-screen bg-[#F94F2F] relative">
@@ -160,34 +186,55 @@ function HomePage() {
 
                 <section id="category">
                     <div className="lg:w-[1100px] w-full mx-auto bg-[#FFFFFF] container">
-                        <span className="font-bold p-2 text-xl">Category</span>
+                        <span className="font-bold p-2 text-xl text-bla">
+                            Category
+                        </span>
                         <div className="container flex flex-wrap h-[302px]">
-                            <div
-                                id="card"
-                                className="w-[10%] h-1/2 flex justify-center items-center box-border p-2"
-                            >
-                                <a
-                                    href="#"
-                                    className="w-full h-full text-black text-center"
-                                >
-                                    <picture class="axJD3V">
-                                        <source
-                                            srcSet="https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w640_nl.webp 2x"
-                                            type="image/webp"
-                                            className="axJD3V"
-                                        />
-                                        <img
-                                            width="320"
-                                            loading="lazy"
-                                            className="PndadC lazyload b0jgRH"
-                                            srcSet="https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w640_nl 2x"
-                                            src="https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553"
-                                        />
-                                    </picture>
-                                    <span>Elektronik</span>
-                                </a>
-                                
-                            </div>
+                            {/* category */}
+                            <CardCategory title={"Elektronik"}>
+                                <picture className="axJD3V">
+                                    <source
+                                        srcSet="https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                        className="axJD3V"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        className="PndadC lazyload b0jgRH"
+                                        srcSet="https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/dcd61dcb7c1448a132f49f938b0cb553"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Komputer & Aksesoris"}>
+                                <picture className="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/id-50009109-0bd6a9ebd0f2ae9b7e8b9ce7d89897d6@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/id-50009109-0bd6a9ebd0f2ae9b7e8b9ce7d89897d6@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/id-50009109-0bd6a9ebd0f2ae9b7e8b9ce7d89897d6@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/id-50009109-0bd6a9ebd0f2ae9b7e8b9ce7d89897d6@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/id-50009109-0bd6a9ebd0f2ae9b7e8b9ce7d89897d6"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Handphone & Aksesoris"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/5230277eefafad8611aaf703d3e99568@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/5230277eefafad8611aaf703d3e99568@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/5230277eefafad8611aaf703d3e99568@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/5230277eefafad8611aaf703d3e99568@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/5230277eefafad8611aaf703d3e99568"
+                                    />
+                                </picture>
+                            </CardCategory>
                         </div>
                     </div>
                 </section>
@@ -212,126 +259,15 @@ function HomePage() {
                             className="flex overflow-y-hidden"
                         >
                             {/* card */}
-                            <div className="card w-1/6 h-60 p-6 bg-[#ffffff] flex flex-col gap-4 text-center">
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lymf1xhp9VsRiLHlq0CKNHuec6mubT88cw&s"
-                                    alt="product"
-                                    className="w-full h-[80%]"
+                            {flashSale.map((item, index) => (
+                                
+                                <CardFlashSale
+                                    key={index}
+                                    img={item.img}
+                                    price={item.price}
                                 />
-                                <span className="text-[#FA5330]">Price</span>
-                                <div
-                                    id="stock"
-                                    className="w-full rounded-lg h-5 bg-[#FFBDA6] relative text-center"
-                                >
-                                    <div
-                                        id="progres"
-                                        className="bg-[#FA5330] absolute top-0 left-0 w-[50%] h-5 rounded-lg"
-                                    ></div>
-                                    <span className="relative">
-                                        Stock Terbatas
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="card w-1/6 h-60 p-6 bg-[#ffffff] flex flex-col gap-4 text-center">
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lymf1xhp9VsRiLHlq0CKNHuec6mubT88cw&s"
-                                    alt="product"
-                                    className="w-full h-[80%]"
-                                />
-                                <span className="text-[#FA5330]">Price</span>
-                                <div
-                                    id="stock"
-                                    className="w-full rounded-lg h-5 bg-[#FFBDA6] relative text-center"
-                                >
-                                    <div
-                                        id="progres"
-                                        className="bg-[#FA5330] absolute top-0 left-0 w-[50%] h-5 rounded-lg"
-                                    ></div>
-                                    <span className="relative">
-                                        Stock Terbatas
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="card w-1/6 h-60 p-6 bg-[#ffffff] flex flex-col gap-4 text-center">
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lymf1xhp9VsRiLHlq0CKNHuec6mubT88cw&s"
-                                    alt="product"
-                                    className="w-full h-[80%]"
-                                />
-                                <span className="text-[#FA5330]">Price</span>
-                                <div
-                                    id="stock"
-                                    className="w-full rounded-lg h-5 bg-[#FFBDA6] relative text-center"
-                                >
-                                    <div
-                                        id="progres"
-                                        className="bg-[#FA5330] absolute top-0 left-0 w-[50%] h-5 rounded-lg"
-                                    ></div>
-                                    <span className="relative">
-                                        Stock Terbatas
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="card w-1/6 h-60 p-6 bg-[#ffffff] flex flex-col gap-4 text-center">
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lymf1xhp9VsRiLHlq0CKNHuec6mubT88cw&s"
-                                    alt="product"
-                                    className="w-full h-[80%]"
-                                />
-                                <span className="text-[#FA5330]">Price</span>
-                                <div
-                                    id="stock"
-                                    className="w-full rounded-lg h-5 bg-[#FFBDA6] relative text-center"
-                                >
-                                    <div
-                                        id="progres"
-                                        className="bg-[#FA5330] absolute top-0 left-0 w-[50%] h-5 rounded-lg"
-                                    ></div>
-                                    <span className="relative">
-                                        Stock Terbatas
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="card w-1/6 h-60 p-6 bg-[#ffffff] flex flex-col gap-4 text-center">
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lymf1xhp9VsRiLHlq0CKNHuec6mubT88cw&s"
-                                    alt="product"
-                                    className="w-full h-[80%]"
-                                />
-                                <span className="text-[#FA5330]">Price</span>
-                                <div
-                                    id="stock"
-                                    className="w-full rounded-lg h-5 bg-[#FFBDA6] relative text-center"
-                                >
-                                    <div
-                                        id="progres"
-                                        className="bg-[#FA5330] absolute top-0 left-0 w-[50%] h-5 rounded-lg"
-                                    ></div>
-                                    <span className="relative">
-                                        Stock Terbatas
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="card w-1/6 h-60 p-6 bg-[#ffffff] flex flex-col gap-4 text-center">
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lymf1xhp9VsRiLHlq0CKNHuec6mubT88cw&s"
-                                    alt="product"
-                                    className="w-full h-[80%]"
-                                />
-                                <span className="text-[#FA5330]">Price</span>
-                                <div
-                                    id="stock"
-                                    className="w-full rounded-lg h-5 bg-[#FFBDA6] relative text-center"
-                                >
-                                    <div
-                                        id="progres"
-                                        className="bg-[#FA5330] absolute top-0 left-0 w-[50%] h-5 rounded-lg"
-                                    ></div>
-                                    <span className="relative">
-                                        Stock Terbatas
-                                    </span>
-                                </div>
-                            </div>
+                            ))}
+
                         </div>
                     </div>
                 </section>
@@ -355,84 +291,24 @@ function HomePage() {
                             className="flex overflow-y-hidden"
                         >
                             {/* card */}
-                            <div className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
-                                <img
-                                    src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
-                                    alt="product"
-                                    className="w-full h-[70%]"
-                                />
-                                <span
-                                    id="title"
-                                    className="text-black font-bold"
-                                >
-                                    Product Name Byatttt
-                                </span>
-                            </div>
-                            <div className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
-                                <img
-                                    src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
-                                    alt="product"
-                                    className="w-full h-[70%]"
-                                />
-                                <span
-                                    id="title"
-                                    className="text-black font-bold"
-                                >
-                                    Product Name Blyatttt
-                                </span>
-                            </div>
-                            <div className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
-                                <img
-                                    src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
-                                    alt="product"
-                                    className="w-full h-[70%]"
-                                />
-                                <span
-                                    id="title"
-                                    className="text-black font-bold"
-                                >
-                                    Product Name Blyatttt
-                                </span>
-                            </div>
-                            <div className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
-                                <img
-                                    src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
-                                    alt="product"
-                                    className="w-full h-[70%]"
-                                />
-                                <span
-                                    id="title"
-                                    className="text-black font-bold"
-                                >
-                                    Product Name Blyatttt
-                                </span>
-                            </div>
-                            <div className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
-                                <img
-                                    src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
-                                    alt="product"
-                                    className="w-full h-[70%]"
-                                />
-                                <span
-                                    id="title"
-                                    className="text-black font-bold"
-                                >
-                                    Product Name Blyatttt
-                                </span>
-                            </div>
-                            <div className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
-                                <img
-                                    src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
-                                    alt="product"
-                                    className="w-full h-[70%]"
-                                />
-                                <span
-                                    id="title"
-                                    className="text-black font-bold"
-                                >
-                                    Product Name Blyatttt
-                                </span>
-                            </div>
+                            {productTerlaris.map((item, index) => (
+                                
+                                    <div key={index} className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
+                                    <img
+                                        src={item.img}
+                                        alt="product"
+                                        className="w-full h-[70%]"
+                                    />
+                                    <span
+                                        id="title"
+                                        className="text-black font-bold"
+                                    >
+                                        {item.title}
+                                    </span>
+                                </div>
+                                
+                            ))}
+                            
                         </div>
                     </div>
                 </section>
@@ -445,622 +321,21 @@ function HomePage() {
                             </span>
                         </div>
                         <div className="container flex flex-wrap text-black">
-                            {/* card */}
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="card" className="w-[20%] h-[300px] p-2">
-                                <div className="h-full flex flex-col justify-between p-2 border-2 bg-white hover:border-[#f54330] rounded-sm transition ">
-                                    <img
-                                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg"
-                                        alt="product"
-                                        className="w-[188px] h-[60%] bg-[#f54330]"
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                    <div className="flex flex-col gap-2">
-                                        <div className="h-10 w-full overflow-hidden">
-                                            <span className="text-sm  ">
-                                                Robot Ai penguasa galaksi
-                                            </span>
-                                        </div>
-                                        <div
-                                            id="status"
-                                            className="h-5 w-full flex flex-wrap gap-1 items-center"
-                                        >
-                                            {/* status */}
-                                            <Bracket>
-                                                Termurah di shopee
-                                            </Bracket>
-                                            <StatusCod />
-                                        </div>
-                                        <div
-                                            id="price"
-                                            className="flex w-full justify-between"
-                                        >
-                                            <span className="text-[#f54330] text-sm font-bold">
-                                                Rp.{" "}
-                                                <span className="text-base">
-                                                    10.000
-                                                </span>
-                                            </span>
-                                            <div className="self-end">
-                                                4.4Rb Terjual
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* card  product*/}
+
+                            {product.map((item, index) => {
+                                return (
+                                    <CardProduct
+                                        key={index}
+                                        status={item.status}
+                                        img={item.img}
+                                        price={item.price}
+                                        selling={item.selling}
+                                    >
+                                        {item.title}
+                                    </CardProduct>
+                                );
+                            })}
                         </div>
                     </div>
                 </section>
