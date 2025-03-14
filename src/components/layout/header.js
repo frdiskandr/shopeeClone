@@ -3,6 +3,8 @@ import Image from "next/image";
 function Header({}) {
     return (
         // dasktop view
+        <div className="w-screen bg-[#F94F2F]">
+
         <header className="hidden sm:block mx-auto max-w-[1100px]">
             <div className="bg-[#F94F2F] h-[119px] flex flex-col">
                 <div className="wraper w-full h-[34px]">
@@ -136,6 +138,7 @@ function Header({}) {
                 </div>
             </div>
         </header>
+        </div>
     );
 }
 
