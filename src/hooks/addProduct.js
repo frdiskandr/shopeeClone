@@ -3,24 +3,64 @@ import { useState } from "react";
 import StatusDetailProduct from "~/components/ui/status/statusDetailProduct";
 function AddProduct({ id }) {
     const [kuantitas, setKuantitas] = useState(1);
-    console.log(id)
+
+    const handleAddToCart = () => {
+        console.log("Produk berhasil ditambahkan ke keranjang.");
+        console.log("ID Produk:", id);
+        console.log("Kuantitas:", kuantitas);
+        alert("Produk berhasil ditambahkan ke keranjang.");
+    };
+
+    const handleBuy = () => {
+        console.log("Produk berhasil dibeli.");
+        console.log("ID Produk:", id);
+        console.log("Kuantitas:", kuantitas);
+        alert("Produk berhasil dibeli.");
+    };
+
     return (
-        <>
+        <div className="relative">
             <StatusDetailProduct title={"kuantitas"}>
-                <form className="relative">
-                    <button className="bg-slate-700" onClick={() => setKuantitas(kuantitas + 1)}>+</button>
+                <div className="relative">
+                    <button
+                        className=" text-xl"
+                        onClick={() => setKuantitas(kuantitas + 1)}
+                    >
+                        +
+                    </button>
+
                     <input
-                        className="bg-slate-700 w-5"
+                        className="bg-slate-700 relative text-center"
                         type="number"
                         value={kuantitas}
                         onChange={(e) => setKuantitas(e.target.value)}
                     />
-                    <button onClick={() => setKuantitas(kuantitas - 1)}>-</button>
-                </form>
+
+                    <button
+                        className="text-xl"
+                        onClick={() => setKuantitas(kuantitas - 1)}
+                    >
+                        -
+                    </button>
+                </div>
             </StatusDetailProduct>
-            <button className="bg-[#F54330] text-xl">Masukan Keranjang</button>
-            <button className="bg-[#F54330] text-xl">Beli Sekarang</button>
-        </>
+            <div className="flex flex-row gap-4">
+                <button
+                    onClick={handleAddToCart}
+                    className="bg-[#FFF5F1] border border-[#f54330] text-sm p-4"
+                    style={{ color: "#f54330" }}
+                >
+                    Masukan Keranjang
+                </button>
+                <button
+                    onClick={handleBuy}
+                    className="bg-[#f54330] text-sm p-4"
+                    style={{ color: "white" }}
+                >
+                    Beli Sekarang
+                </button>
+            </div>
+        </div>
     );
 }
 
