@@ -7,31 +7,115 @@ import CardProduct from "../ui/cardProduct";
 function HomePage() {
     const product = [
         {
-            title: "name Product",
-            selling: "0",
-            price: "0",
+            title: "Topi Kupluk Rajut Winter Fujian pria/wanita dewasa fulltalk beanies hat nyaman di pakai",
+            selling: "10Rb",
+            price: "10.999",
             status: {
-                bracket: "",
+                bracket: "Pruduct Terlaris",
                 cod: true,
             },
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-M_r7bEyuBQzUODeKwobumjZ2bnoB_uelw&s",
-            element: <div>halo</div>
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7ras9-m0eukbdyvr5jee.webp",
+            element: <div>halo</div>,
+        },
+        {
+            title: "Operasi Manual Simulasi Real Soft Toy For Boys Outdoor CS Game Playing Toy For Children Gift",
+            selling: "4,5Rb",
+            price: "41.359",
+            status: {
+                bracket: "Pruduct Terlaris",
+                cod: true,
+            },
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r98r-lug4yxbs6q4w9d.webpe.webp",
+            element: <div>halo</div>,
+        },
+        {
+            title: "Parfum kualitas premium vanilla cake paling wangi edp 35 ml",
+            selling: "10Rb+",
+            price: "11.950",
+            status: {
+                bracket: "Pruduct Terlaris",
+                cod: true,
+            },
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r98p-ls1ct4ihr33x2f.webp",
+            element: <div>halo</div>,
+        },
+        {
+            title: "VGA MSI GeForce RTX 5080 16G VENTUS 3X OC PLUS 16GB GDDR7",
+            selling: "1Rb",
+            price: "24.690.000",
+            status: {
+                bracket: "Pruduct Terlaris",
+                cod: true,
+            },
+            img: "https://down-id.img.susercontent.com/file/sg-11134201-7rbmi-m5v27yp7ngwe82.webp",
+            element: <div>halo</div>,
+        },
+        {
+            title: "PC GAMING AMD RYZEN 7 5700X | VGA GTX 1650 4GB DDR6 | MONITOR Samsung 24",
+            selling: "1Rb",
+            price: "9.990.000",
+            status: {
+                bracket: "Pruduct Terlaris",
+                cod: true,
+            },
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7rasi-m1ze974p1fyhb1.webp",
+            element: <div>halo</div>,
         },
     ];
 
     const productTerlaris = [
         {
-            title: "name Product",
-            img: ""
-        }
+            title: "M10 plus TWS Bluetooth 5.1",
+            img: "https://down-id.img.susercontent.com/file/id-11134201-23030-gttr39581gov2a@resize_w450_nl.webp",
+        },
+        {
+            title: "Pc Gaming",
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7ras9-m58hdmkjyl8m77.webp",
+        },
+        {
+            title: "All In One Pc",
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r98u-m0186bsjxlvsf5.webp",
+        },
+        {
+            title: "Pajero",
+            img: "https://down-id.img.susercontent.com/file/21594dee98aa7afff3915485d60cb685.webp",
+        },
+        {
+            title: "Parfume",
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r992-lla41vyeplt794.webp",
+        },
+        {
+            title: "T-Shirt",
+            img: "https://down-id.img.susercontent.com/file/a8dd7b299c3291599cbd5d3757067afb.webp",
+        },
     ];
 
     const flashSale = [
         {
-            price: "0",
-            img:""
-        }
-    ]
+            price: "28.000",
+            img: "https://down-id.img.susercontent.com/file/41f968b900a96a822e03ae1761fbf85f.webp",
+        },
+        {
+            price: "40.000",
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r98v-lnrzm05f2mom94.webp",
+        },
+        {
+            price: "17.000",
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r98v-lzyjljjun7z41c.webp",
+        },
+        {
+            price: "27.900",
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r98o-ln08ru3qct0d47.webp",
+        },
+        {
+            price: "13.888",
+            img: "https://down-id.img.susercontent.com/file/73078c55cd66e406e97d6d333709ff8d.webp",
+        },
+        {
+            price: "5.699",
+            img: "https://down-id.img.susercontent.com/file/id-11134207-7r98x-lx94zafezfhae4.webp",
+        },
+    ];
     return (
         <>
             <div className="w-screen bg-[#F94F2F] relative">
@@ -235,6 +319,244 @@ function HomePage() {
                                     />
                                 </picture>
                             </CardCategory>
+                            <CardCategory title={"Fashion Pria"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/04dba508f1ad19629518defb94999ef9@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/04dba508f1ad19629518defb94999ef9@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/04dba508f1ad19629518defb94999ef9@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/04dba508f1ad19629518defb94999ef9@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/04dba508f1ad19629518defb94999ef9"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Sepatu Pria"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/3c8ff51aab1692a80c5883972a679168@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/3c8ff51aab1692a80c5883972a679168@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/3c8ff51aab1692a80c5883972a679168@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/3c8ff51aab1692a80c5883972a679168@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/3c8ff51aab1692a80c5883972a679168"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Tas Pria"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/47ed832eed0feb62fd28f08c9229440e@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/47ed832eed0feb62fd28f08c9229440e@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/47ed832eed0feb62fd28f08c9229440e@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/47ed832eed0feb62fd28f08c9229440e@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/47ed832eed0feb62fd28f08c9229440e"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Aksesoris & Fashion"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/1f18bdfe73df39c66e7326b0a3e08e87@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/1f18bdfe73df39c66e7326b0a3e08e87@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/1f18bdfe73df39c66e7326b0a3e08e87@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/1f18bdfe73df39c66e7326b0a3e08e87@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/1f18bdfe73df39c66e7326b0a3e08e87"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Jam Tangan"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/2bdf8cf99543342d4ebd8e1bdb576f80@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/2bdf8cf99543342d4ebd8e1bdb576f80@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/2bdf8cf99543342d4ebd8e1bdb576f80@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/2bdf8cf99543342d4ebd8e1bdb576f80@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/2bdf8cf99543342d4ebd8e1bdb576f80"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Kesehatan"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/eb7d583e4b72085e71cd21a70ce47d7a@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/eb7d583e4b72085e71cd21a70ce47d7a@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/eb7d583e4b72085e71cd21a70ce47d7a@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/eb7d583e4b72085e71cd21a70ce47d7a@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/eb7d583e4b72085e71cd21a70ce47d7a"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Hoby & Koleksi"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/42394b78fac1169d67c6291973a3b132@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/42394b78fac1169d67c6291973a3b132@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/42394b78fac1169d67c6291973a3b132@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/42394b78fac1169d67c6291973a3b132@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/42394b78fac1169d67c6291973a3b132"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Makanan & Minuman"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/7873b8c3824367239efb02d18eeab4f5@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/7873b8c3824367239efb02d18eeab4f5@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/7873b8c3824367239efb02d18eeab4f5@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/7873b8c3824367239efb02d18eeab4f5@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/7873b8c3824367239efb02d18eeab4f5"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Perawatan & Kecaantikan"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/2715b985ae706a4c39a486f83da93c4b@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/2715b985ae706a4c39a486f83da93c4b@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/2715b985ae706a4c39a486f83da93c4b@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/2715b985ae706a4c39a486f83da93c4b@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/2715b985ae706a4c39a486f83da93c4b"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Perlengkapan Rumah"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/c1494110e0383780cdea73ed890e0299@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/c1494110e0383780cdea73ed890e0299@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/c1494110e0383780cdea73ed890e0299@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/c1494110e0383780cdea73ed890e0299@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/c1494110e0383780cdea73ed890e0299"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Pakaian Wanita"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/6d63cca7351ba54a2e21c6be1721fa3a@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/6d63cca7351ba54a2e21c6be1721fa3a@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/6d63cca7351ba54a2e21c6be1721fa3a@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/6d63cca7351ba54a2e21c6be1721fa3a@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/6d63cca7351ba54a2e21c6be1721fa3a"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Fashion Muslim"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/b98756cdb31eabe3d7664599e24ccc29@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/b98756cdb31eabe3d7664599e24ccc29@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/b98756cdb31eabe3d7664599e24ccc29@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/b98756cdb31eabe3d7664599e24ccc29@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/b98756cdb31eabe3d7664599e24ccc29"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Fashion Bayi & Anak"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/9251edd6d6dd98855ff5a99497835d9c@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/9251edd6d6dd98855ff5a99497835d9c@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/9251edd6d6dd98855ff5a99497835d9c@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/9251edd6d6dd98855ff5a99497835d9c@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/9251edd6d6dd98855ff5a99497835d9c"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Ibu & Bayi"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/4d1673a14c26c8361a76258d78446324@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/4d1673a14c26c8361a76258d78446324@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/4d1673a14c26c8361a76258d78446324@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/4d1673a14c26c8361a76258d78446324@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/4d1673a14c26c8361a76258d78446324"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Sepatu Wanita"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/id-50009109-a947822064b7a8077b15596c85bd9303@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/id-50009109-a947822064b7a8077b15596c85bd9303@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/id-50009109-a947822064b7a8077b15596c85bd9303@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/id-50009109-a947822064b7a8077b15596c85bd9303@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/id-50009109-a947822064b7a8077b15596c85bd9303"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Tas Wanita"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/id-50009109-da8cea4e4705abb4dd935b244668e9dd@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/id-50009109-da8cea4e4705abb4dd935b244668e9dd@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/id-50009109-da8cea4e4705abb4dd935b244668e9dd@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/id-50009109-da8cea4e4705abb4dd935b244668e9dd@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/id-50009109-da8cea4e4705abb4dd935b244668e9dd"
+                                    />
+                                </picture>
+                            </CardCategory>
+                            <CardCategory title={"Otomotif"}>
+                                <picture class="axJD3V">
+                                    <source
+                                        srcset="https://down-id.img.susercontent.com/file/27838b968afb76ca59dd8e8f57ece91f@resize_w320_nl.webp 1x, https://down-id.img.susercontent.com/file/27838b968afb76ca59dd8e8f57ece91f@resize_w640_nl.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        width="320"
+                                        loading="lazy"
+                                        srcset="https://down-id.img.susercontent.com/file/27838b968afb76ca59dd8e8f57ece91f@resize_w320_nl 1x, https://down-id.img.susercontent.com/file/27838b968afb76ca59dd8e8f57ece91f@resize_w640_nl 2x"
+                                        src="https://down-id.img.susercontent.com/file/27838b968afb76ca59dd8e8f57ece91f"
+                                    />
+                                </picture>
+                            </CardCategory>
                         </div>
                     </div>
                 </section>
@@ -260,14 +582,12 @@ function HomePage() {
                         >
                             {/* card */}
                             {flashSale.map((item, index) => (
-                                
                                 <CardFlashSale
                                     key={index}
                                     img={item.img}
                                     price={item.price}
                                 />
                             ))}
-
                         </div>
                     </div>
                 </section>
@@ -292,8 +612,10 @@ function HomePage() {
                         >
                             {/* card */}
                             {productTerlaris.map((item, index) => (
-                                
-                                    <div key={index} className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start">
+                                <div
+                                    key={index}
+                                    className="card w-1/6 h-60 p-2 bg-[#ffffff] flex flex-col gap-4 text-start"
+                                >
                                     <img
                                         src={item.img}
                                         alt="product"
@@ -306,9 +628,7 @@ function HomePage() {
                                         {item.title}
                                     </span>
                                 </div>
-                                
                             ))}
-                            
                         </div>
                     </div>
                 </section>
