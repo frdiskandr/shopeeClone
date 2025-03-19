@@ -1,8 +1,8 @@
-import Header from "../layout/header";
-import CardHead from "../ui/cardHeader";
-import CardCategory from "../ui/cardCategory";
-import CardFlashSale from "../ui/cardFlashSale";
-import CardProduct from "../ui/cardProduct";
+import Header from "../components/layout/header";
+import CardHead from "../components/ui/cardHeader";
+import CardCategory from "../components/ui/cardCategory";
+import CardFlashSale from "../components/ui/cardFlashSale";
+import CardProduct from "../components/ui/cardProduct";
 
 function HomePage() {
     const product = [

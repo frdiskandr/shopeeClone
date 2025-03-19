@@ -1,5 +1,14 @@
-import HomePage from "~/components/pages/home";
+import BasicModal from "~/components/modal/modal";
+import HomePage from "~/pages/home";
 
 export default function Home() {
-  return <HomePage/>
+
+    return (
+        <>
+            <div className="sm:hidden absolute">
+                <BasicModal/>
+            </div>
+            <HomePage />
+        </>
+    );
 }
